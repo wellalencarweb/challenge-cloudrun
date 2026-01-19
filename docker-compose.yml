@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  api_dev:
+    env_file:
+      - path: ./.env
+        required: true
+    image: wellalencarweb/goexpert-lab-cloudrun-challenge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${WEB_SERVER_PORT}:${WEB_SERVER_PORT}"
+
+  api_prod:
+    env_file:
+      - path: ./.env
+        required: true
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: precisa_ser_definada_aqui
+    ports:
+      - "${WEB_SERVER_PORT}:${WEB_SERVER_PORT}"

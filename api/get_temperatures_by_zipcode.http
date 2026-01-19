@@ -1,0 +1,15 @@
+### Get temperatures by zipcode (success)
+GET http://localhost:8080/?zipcode=22021001
+Accept: application/json
+
+### Get temperatures by zipcode (invalid format)
+GET http://localhost:8080/?zipcode=22021-001
+Accept: application/json
+
+### Get temperatures by zipcode (empty)
+GET http://localhost:8080/?zipcode=
+Accept: application/json
+
+### Get temperatures by zipcode (not found)
+GET http://localhost:8080/?zipcode=00000000
+Accept: application/json
