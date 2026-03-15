@@ -7,7 +7,7 @@ Aplicação web em Go que receba um CEP, identifica a cidade e retorna o clima a
 
 A aplicação está disponível para acesso no serviço Google Cloud Run e pode ser acessado seguindo os seguintes parâmetros:
 
-- **Endpoint:** https://goexpert-lab-cloudrun-challenge-mj2kexbmja-uc.a.run.app
+- **Endpoint:** https://challenge-cloudrun-342024699393.us-central1.run.app/?zipcode=22021001
 - **Método:** GET
 - **Query Params:**
   - **zipcode:** CEP a ser consultado
@@ -15,7 +15,7 @@ A aplicação está disponível para acesso no serviço Google Cloud Run e pode 
 Exemplo de requisição com `curl`:
 
 ```bash
-curl -X GET https://goexpert-lab-cloudrun-challenge-mj2kexbmja-uc.a.run.app/\?zipcode\=01001000
+curl -X GET https://challenge-cloudrun-342024699393.us-central1.run.app/\?zipcode\=01001000
 ```
 
 ## Executando localmente (dev)
